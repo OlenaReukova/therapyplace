@@ -1,6 +1,25 @@
+/* Ensure the root element takes the full height of the viewport */
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px;
   margin: 0 auto;
+  padding: 2rem;
+  text-align: center; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make sure the header sticks to the top */
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+/* Main content should take the remaining space */
+.main-content {
+  flex-grow: 1;
   padding: 2rem;
   text-align: center;
 }
