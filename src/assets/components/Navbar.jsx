@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 const pages = ['About', 'Services', 'Gallery', 'Reviews', 'FAQ', 'Book Now'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['About', 'Services', 'Gallery', 'Reviews', 'FAQ', 'Book Now'];
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -29,6 +29,16 @@ export default function Navbar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  //   const MenuItems = [
+  //     { Name: 'Home', Link: '/' },
+  //     { Name: 'About', Link: '#' },
+  //     { Name: 'Services', Link: '#' },
+  //     { Name: 'Gallery', Link: '#' },
+  //     { Name: 'Reviews', Link: '#' },
+  //     { Name: 'FAQ', Link: '#' },
+  //     { Name: 'Book Now', Link: '#' },
+  //   ];
 
   return (
     <div className='header'>
@@ -125,7 +135,7 @@ export default function Navbar() {
             </Box>
             {/* User Menu */}
             <Box sx={{ flexGrow: 0 }}>
-              {/* <Menu> contains user settings links, such as "Profile," "Account," "Dashboard," and "Logout." It uses state anchorElUser to manage its open/close state. */}
+              {/* <Menu> contains user settings links, such as 'About', 'Services', 'Gallery', 'Reviews', 'FAQ', 'Book Now' It uses state anchorElUser to manage its open/close state. */}
               <Menu
                 sx={{ mt: '45px' }}
                 id='menu-appbar'
